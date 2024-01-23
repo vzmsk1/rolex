@@ -38,7 +38,7 @@ module.exports = {
   target,
 
   // entry point
-  entry: path.resolve(__dirname, 'src/js/app.js'),
+  entry: path.resolve(__dirname, 'src/js/index.js'),
 
   // where the bundled file will resolve
   output: {

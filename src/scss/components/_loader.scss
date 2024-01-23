@@ -1,0 +1,57 @@
+.loader {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: $bgColor;
+  pointer-events: none;
+  @media (max-width: 48em) {
+    gap: 4rem;
+  }
+
+  // .loader__logo-wrap
+
+  &__logo-wrap {
+    width: 8rem;
+    @media (max-width: 48em) {
+      width: 16rem;
+    }
+  }
+
+  // .loader__logo
+
+  &__logo {
+    object-fit: contain;
+  }
+
+  // .loader__text
+
+  &__text {
+    font-size: 1.5rem;
+    color: $lightGray;
+    line-height: 2rem;
+    letter-spacing: -0.04em;
+    @media (max-width: 48em) {
+      font-size: 3rem;
+    }
+  }
+
+  // .loader__progress
+
+  &__progress {
+    margin: 0 5%;
+    width: 50%;
+    height: 1px;
+    background-color: #617696;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s;
+  }
+}

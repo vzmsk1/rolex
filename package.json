@@ -1,7 +1,7 @@
 {
   "name": "webpack-setup",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "dev": "webpack serve --progress",
     "prod": "NODE_ENV=production webpack"
@@ -39,5 +39,9 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "three": "^0.160.1"
   }
 }

@@ -15,7 +15,17 @@
 <body>
 	<div class="wrapper">
 
-		<main class="main"></main>
+		<main style="background-color: #000" class="main">
+			<div id="loader" class="loader">
+				<div class="loader__logo-wrap">
+					<img src="img/logo.svg" alt="" class="loader__logo" />
+				</div>
+				<p class="loader__text">Loading... Please wait</p>
+				<div id="progress" class="loader__progress"></div>
+			</div>
+
+			<div id="canvas-container"></div>
+		</main>
 
 	</div>
 	<script src="js/app.js"></script>
