@@ -4,6 +4,7 @@
 $white: #ffffff;
 $bgColor: #0d1328;
 $lightGray: #b4bec5;
+$pink: #ed4779;
 
 // ---------------------------------- fonts ---------------------------------
 
@@ -18,4 +19,11 @@ $lightGray: #b4bec5;
 
 // ------------------------------- components -------------------------------
 
+@import 'components/header';
 @import 'components/loader';
+@import 'components/navigation';
+@import 'components/discover';
+
+// ------------------------------ common styles -----------------------------
+
+@import 'common/common';

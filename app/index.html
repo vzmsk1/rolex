@@ -12,10 +12,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body style="overflow: hidden">
 	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<a href="#" class="header__logo"><img src="img/logo.svg" alt="" class="header__logo-img" /></a>
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg></a>
+					</li>
+					<li class="header__item">
+						<button type="button">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</header>
 
-		<main style="background-color: #000" class="main">
+		<main class="main">
 			<div id="loader" class="loader">
 				<div class="loader__logo-wrap">
 					<img src="img/logo.svg" alt="" class="loader__logo" />
@@ -23,6 +46,48 @@
 				<p class="loader__text">Loading... Please wait</p>
 				<div id="progress" class="loader__progress"></div>
 			</div>
+			<section class="discover">
+				<div class="discover__container container">
+					<div id="discoverContent" class="discover__content">
+						<span class="discover__subtitle">Introducing the new generation of the</span>
+						<h1 class="discover__title">Cosmo graph Daytona</h1>
+						<p class="discover__text">
+							The essence of the Oyster. The light reflections on the case sides
+							highlight the elegant profile of the Oyster case, which is
+							<span>made from Oystersteel</span>. Measuring 41 mm or 36 mm
+							respectively, it is fitted with a domed bezel.
+						</p>
+						<span class="discover__text discover__text_ghost">Start scrolling to know more</span>
+					</div>
+					<div id="scroller" class="discover__scroller scroller">
+						<p class="scroller__text">Start scrolling to know more</p>
+						<svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18 33a15 15 0 1 0 0-30 15 15 0 0 0 0 30Z" stroke="#84aac6" stroke-linecap="round" stroke-linejoin="round"></path>
+							<path d="m12 18 6 6 6-6M18 12v12" stroke="#84aac6" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<nav id="pageNav" class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item _active">
+						<a href="#" class="navigation__bullet"></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__bullet"></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__bullet"></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__bullet"></a>
+					</li>
+					<li class="navigation__item">
+						<a href="#" class="navigation__bullet"></a>
+					</li>
+				</ul>
+			</nav>
 
 			<div id="canvas-container"></div>
 		</main>

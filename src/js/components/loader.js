@@ -5,6 +5,12 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 // gsap
 import gsap from 'gsap';
 
+// gui
+import * as dat from 'dat.gui';
+
+// components
+import { RolexModel } from './rolexModel';
+
 // --------------------------------------------------------------------------
 
 export class Loader {
@@ -33,9 +39,9 @@ export class Loader {
     });
   }
 
-  loadModel(app) {
-    app.gltfLoader.load('./files/rolex_neotix.gltf', function (gltf) {
-      app.scene.add(gltf.scene);
+  loadModel(_this) {
+    _this.gltfLoader.load('./files/rolex_neotix.gltf', function (gltf) {
+      new RolexModel(_this.scene, gltf);
     });
   }
 

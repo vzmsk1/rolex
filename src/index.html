@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   @@include('html/_head.htm',{ "title":"Rolex Oyster Perpetual" })
-  <body>
+  <body style="overflow: hidden">
     <div class="wrapper">
       @@include('html/_header.htm',{})
-      <main style="background-color: #000" class="main">
-        @@include('html/_loader.htm',{})
+      <main class="main">
+        @@include('html/_loader.htm',{}) @@include('html/_discover.htm',{})
+        @@include('html/_navigation.htm',{})
         <div id="canvas-container"></div>
       </main>
       @@include('html/_footer.htm',{})

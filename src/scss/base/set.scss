@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+section {
+  user-select: none;
+}
+
 html {
   margin: 0;
   padding: 0;
